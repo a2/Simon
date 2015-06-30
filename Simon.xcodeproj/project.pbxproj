@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				8380CCBC1B427DCF001E8528 /* AppDelegate.swift */,
-				8380CCBE1B427DCF001E8528 /* ViewController.swift */,
-				8380CCC01B427DCF001E8528 /* Main.storyboard */,
 				8380CCC31B427DCF001E8528 /* Assets.xcassets */,
-				8380CCC51B427DCF001E8528 /* LaunchScreen.storyboard */,
 				8380CCC81B427DCF001E8528 /* Info.plist */,
+				8380CCC51B427DCF001E8528 /* LaunchScreen.storyboard */,
+				8380CCC01B427DCF001E8528 /* Main.storyboard */,
+				8380CCBE1B427DCF001E8528 /* ViewController.swift */,
 			);
 			path = Simon;
 			sourceTree = "<group>";
@@ -110,8 +110,8 @@
 		8380CCD01B427DD0001E8528 /* SimonTests */ = {
 			isa = PBXGroup;
 			children = (
-				8380CCD11B427DD0001E8528 /* SimonTests.swift */,
 				8380CCD31B427DD0001E8528 /* Info.plist */,
+				8380CCD11B427DD0001E8528 /* SimonTests.swift */,
 			);
 			path = SimonTests;
 			sourceTree = "<group>";
@@ -119,8 +119,8 @@
 		8380CCDB1B427DD0001E8528 /* SimonUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8380CCDC1B427DD0001E8528 /* SimonUITests.swift */,
 				8380CCDE1B427DD0001E8528 /* Info.plist */,
+				8380CCDC1B427DD0001E8528 /* SimonUITests.swift */,
 			);
 			path = SimonUITests;
 			sourceTree = "<group>";
@@ -483,6 +483,7 @@
 				8380CCE31B427DD0001E8528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8380CCE41B427DD0001E8528 /* Build configuration list for PBXNativeTarget "SimonTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				8380CCE61B427DD0001E8528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8380CCE71B427DD0001E8528 /* Build configuration list for PBXNativeTarget "SimonUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +501,7 @@
 				8380CCE91B427DD0001E8528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
