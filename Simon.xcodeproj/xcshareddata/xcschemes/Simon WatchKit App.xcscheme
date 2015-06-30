@@ -56,6 +56,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "83C6B2EB1B42DAE4001A9B54"
+               BuildableName = "SimonKitTests.xctest"
+               BlueprintName = "SimonKitTests"
+               ReferencedContainer = "container:Simon.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
