@@ -15,7 +15,11 @@
                                 <label alignment="left" text="Welcome to Simon." numberOfLines="0" id="yJy-go-8rb">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
-                                <button width="1" alignment="left" title="Play" id="4nD-kh-1ff"/>
+                                <button width="1" alignment="left" title="Play" id="4nD-kh-1ff">
+                                    <connections>
+                                        <action selector="play" destination="AgC-eL-Hgc" id="9cD-7p-qqd"/>
+                                    </connections>
+                                </button>
                                 <button width="1" alignment="left" title="High Scores" id="ZtP-gp-see">
                                     <connections>
                                         <segue destination="aOm-Dk-CyY" kind="push" id="hHL-nW-dP2"/>
@@ -26,6 +30,7 @@
                     </items>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="294" y="429"/>
         </scene>
         <!--Game Buttons-->
         <scene sceneID="mHt-ZI-xsq">
@@ -89,7 +94,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="544" y="154"/>
+            <point key="canvasLocation" x="544" y="136"/>
         </scene>
         <!--High Scores-->
         <scene sceneID="zkS-zN-LxU">
@@ -184,7 +189,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="753" y="154"/>
+            <point key="canvasLocation" x="785" y="136"/>
         </scene>
     </scenes>
 </document>

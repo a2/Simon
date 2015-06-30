@@ -1,7 +1,17 @@
 import Foundation
+import SimonKit
 import WatchKit
 
 class MainMenuInterfaceController: WKInterfaceController {
+    // MARK: - Actions
+
+    @IBAction func play() {
+        let game = Game<Color>()
+        WKInterfaceController.reloadRootControllers([(name: "gameButtons", context: Box(game))])
+    }
+
+    // MARK: - Life Cycle
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
 

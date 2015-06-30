@@ -32,6 +32,18 @@
 		83C6B2F91B42DAE4001A9B54 /* SimonKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83C6B2E31B42DAE3001A9B54 /* SimonKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		83C6B30E1B42DBD5001A9B54 /* SimonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C6B3061B42DB0B001A9B54 /* SimonKit.framework */; };
 		83C6B30F1B42DBD5001A9B54 /* SimonKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83C6B3061B42DB0B001A9B54 /* SimonKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83C6B3141B42DC5D001A9B54 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B3131B42DC5D001A9B54 /* Color.swift */; };
+		83C6B3151B42DC5E001A9B54 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B3131B42DC5D001A9B54 /* Color.swift */; };
+		83C6B3171B42DD43001A9B54 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B3161B42DD43001A9B54 /* Game.swift */; };
+		83C6B3181B42DD43001A9B54 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B3161B42DD43001A9B54 /* Game.swift */; };
+		83C6B31A1B42DDCD001A9B54 /* RandomValuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B3191B42DDCD001A9B54 /* RandomValuable.swift */; };
+		83C6B31B1B42DDCD001A9B54 /* RandomValuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B3191B42DDCD001A9B54 /* RandomValuable.swift */; };
+		83C6B31D1B42DF8B001A9B54 /* Color+RandomValuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B31C1B42DF8B001A9B54 /* Color+RandomValuable.swift */; };
+		83C6B31E1B42DF8B001A9B54 /* Color+RandomValuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B31C1B42DF8B001A9B54 /* Color+RandomValuable.swift */; };
+		83C6B3201B42E034001A9B54 /* Game+RandomValuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B31F1B42E034001A9B54 /* Game+RandomValuable.swift */; };
+		83C6B3211B42E034001A9B54 /* Game+RandomValuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B31F1B42E034001A9B54 /* Game+RandomValuable.swift */; };
+		83C6B3231B42E24D001A9B54 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B3221B42E24D001A9B54 /* Box.swift */; };
+		83C6B3241B42E24D001A9B54 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B3221B42E24D001A9B54 /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +186,12 @@
 		83C6B2F31B42DAE4001A9B54 /* SimonKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonKitTests.swift; sourceTree = "<group>"; };
 		83C6B2F51B42DAE4001A9B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83C6B3061B42DB0B001A9B54 /* SimonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C6B3131B42DC5D001A9B54 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		83C6B3161B42DD43001A9B54 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		83C6B3191B42DDCD001A9B54 /* RandomValuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomValuable.swift; sourceTree = "<group>"; };
+		83C6B31C1B42DF8B001A9B54 /* Color+RandomValuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+RandomValuable.swift"; sourceTree = "<group>"; };
+		83C6B31F1B42E034001A9B54 /* Game+RandomValuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+RandomValuable.swift"; sourceTree = "<group>"; };
+		83C6B3221B42E24D001A9B54 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,8 +342,14 @@
 		83C6B2E41B42DAE3001A9B54 /* SimonKit */ = {
 			isa = PBXGroup;
 			children = (
-				83C6B2E51B42DAE3001A9B54 /* SimonKit.h */,
+				83C6B3221B42E24D001A9B54 /* Box.swift */,
+				83C6B3131B42DC5D001A9B54 /* Color.swift */,
+				83C6B31C1B42DF8B001A9B54 /* Color+RandomValuable.swift */,
+				83C6B3161B42DD43001A9B54 /* Game.swift */,
+				83C6B31F1B42E034001A9B54 /* Game+RandomValuable.swift */,
 				83C6B2E71B42DAE3001A9B54 /* Info.plist */,
+				83C6B3191B42DDCD001A9B54 /* RandomValuable.swift */,
+				83C6B2E51B42DAE3001A9B54 /* SimonKit.h */,
 			);
 			path = SimonKit;
 			sourceTree = "<group>";
@@ -514,6 +538,7 @@
 		8380CCB11B427DCF001E8528 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Pandamonia LLC";
 				TargetAttributes = {
@@ -679,6 +704,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C6B31D1B42DF8B001A9B54 /* Color+RandomValuable.swift in Sources */,
+				83C6B3201B42E034001A9B54 /* Game+RandomValuable.swift in Sources */,
+				83C6B3141B42DC5D001A9B54 /* Color.swift in Sources */,
+				83C6B3231B42E24D001A9B54 /* Box.swift in Sources */,
+				83C6B31A1B42DDCD001A9B54 /* RandomValuable.swift in Sources */,
+				83C6B3171B42DD43001A9B54 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +725,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C6B31E1B42DF8B001A9B54 /* Color+RandomValuable.swift in Sources */,
+				83C6B3211B42E034001A9B54 /* Game+RandomValuable.swift in Sources */,
+				83C6B3151B42DC5E001A9B54 /* Color.swift in Sources */,
+				83C6B3241B42E24D001A9B54 /* Box.swift in Sources */,
+				83C6B31B1B42DDCD001A9B54 /* RandomValuable.swift in Sources */,
+				83C6B3181B42DD43001A9B54 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,6 +894,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Simon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Simon;
@@ -868,6 +906,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Simon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Simon;
@@ -961,6 +1000,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Simon WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Simon.watchkitapp.watchkitextension;
@@ -976,6 +1016,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Simon WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Simon.watchkitapp.watchkitextension;
@@ -990,6 +1031,7 @@
 		83C6B2FA1B42DAE4001A9B54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1001,6 +1043,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.SimonKit;
 				PRODUCT_NAME = SimonKit;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1009,6 +1052,7 @@
 		83C6B2FB1B42DAE4001A9B54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1050,6 +1094,8 @@
 		83C6B30C1B42DB0B001A9B54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1062,6 +1108,7 @@
 				PRODUCT_NAME = SimonKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1072,6 +1119,8 @@
 		83C6B30D1B42DB0B001A9B54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
