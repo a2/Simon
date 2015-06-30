@@ -146,7 +146,11 @@
 				8380CD261B427F7E001E8528 /* Simon WatchKit App Extension */,
 				8380CCBA1B427DCF001E8528 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+			wrapsLines = 1;
 		};
 		8380CCBA1B427DCF001E8528 /* Products */ = {
 			isa = PBXGroup;
