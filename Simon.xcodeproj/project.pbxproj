@@ -14,6 +14,13 @@
 		8380CCC71B427DCF001E8528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8380CCC51B427DCF001E8528 /* LaunchScreen.storyboard */; };
 		8380CCD21B427DD0001E8528 /* SimonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380CCD11B427DD0001E8528 /* SimonTests.swift */; };
 		8380CCDD1B427DD0001E8528 /* SimonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380CCDC1B427DD0001E8528 /* SimonUITests.swift */; };
+		8380CD1A1B427F7E001E8528 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8380CD181B427F7E001E8528 /* Interface.storyboard */; };
+		8380CD1C1B427F7E001E8528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8380CD1B1B427F7E001E8528 /* Assets.xcassets */; };
+		8380CD231B427F7E001E8528 /* Simon WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8380CD221B427F7E001E8528 /* Simon WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8380CD281B427F7E001E8528 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380CD271B427F7E001E8528 /* InterfaceController.swift */; };
+		8380CD2A1B427F7E001E8528 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380CD291B427F7E001E8528 /* ExtensionDelegate.swift */; };
+		8380CD2C1B427F7E001E8528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8380CD2B1B427F7E001E8528 /* Assets.xcassets */; };
+		8380CD301B427F7E001E8528 /* Simon WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8380CD161B427F7D001E8528 /* Simon WatchKit App.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,46 @@
 			remoteGlobalIDString = 8380CCB81B427DCF001E8528;
 			remoteInfo = Simon;
 		};
+		8380CD241B427F7E001E8528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8380CCB11B427DCF001E8528 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8380CD211B427F7E001E8528;
+			remoteInfo = "Simon WatchKit App Extension";
+		};
+		8380CD2E1B427F7E001E8528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8380CCB11B427DCF001E8528 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8380CD151B427F7D001E8528;
+			remoteInfo = "Simon WatchKit App";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8380CD361B427F7E001E8528 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8380CD231B427F7E001E8528 /* Simon WatchKit App Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8380CD381B427F7E001E8528 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8380CD301B427F7E001E8528 /* Simon WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8380CCB91B427DCF001E8528 /* Simon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +93,15 @@
 		8380CCD81B427DD0001E8528 /* SimonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8380CCDC1B427DD0001E8528 /* SimonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonUITests.swift; sourceTree = "<group>"; };
 		8380CCDE1B427DD0001E8528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8380CD161B427F7D001E8528 /* Simon WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simon WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8380CD191B427F7E001E8528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8380CD1B1B427F7E001E8528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8380CD1D1B427F7E001E8528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8380CD221B427F7E001E8528 /* Simon WatchKit App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simon WatchKit App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8380CD271B427F7E001E8528 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8380CD291B427F7E001E8528 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8380CD2B1B427F7E001E8528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8380CD2D1B427F7E001E8528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +126,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8380CD1F1B427F7E001E8528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +142,8 @@
 				8380CCBB1B427DCF001E8528 /* Simon */,
 				8380CCD01B427DD0001E8528 /* SimonTests */,
 				8380CCDB1B427DD0001E8528 /* SimonUITests */,
+				8380CD171B427F7E001E8528 /* Simon WatchKit App */,
+				8380CD261B427F7E001E8528 /* Simon WatchKit App Extension */,
 				8380CCBA1B427DCF001E8528 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +154,8 @@
 				8380CCB91B427DCF001E8528 /* Simon.app */,
 				8380CCCD1B427DCF001E8528 /* SimonTests.xctest */,
 				8380CCD81B427DD0001E8528 /* SimonUITests.xctest */,
+				8380CD161B427F7D001E8528 /* Simon WatchKit App.app */,
+				8380CD221B427F7E001E8528 /* Simon WatchKit App Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +191,27 @@
 			path = SimonUITests;
 			sourceTree = "<group>";
 		};
+		8380CD171B427F7E001E8528 /* Simon WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8380CD181B427F7E001E8528 /* Interface.storyboard */,
+				8380CD1B1B427F7E001E8528 /* Assets.xcassets */,
+				8380CD1D1B427F7E001E8528 /* Info.plist */,
+			);
+			path = "Simon WatchKit App";
+			sourceTree = "<group>";
+		};
+		8380CD261B427F7E001E8528 /* Simon WatchKit App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8380CD271B427F7E001E8528 /* InterfaceController.swift */,
+				8380CD291B427F7E001E8528 /* ExtensionDelegate.swift */,
+				8380CD2B1B427F7E001E8528 /* Assets.xcassets */,
+				8380CD2D1B427F7E001E8528 /* Info.plist */,
+			);
+			path = "Simon WatchKit App Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +222,12 @@
 				8380CCB51B427DCF001E8528 /* Sources */,
 				8380CCB61B427DCF001E8528 /* Frameworks */,
 				8380CCB71B427DCF001E8528 /* Resources */,
+				8380CD381B427F7E001E8528 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8380CD2F1B427F7E001E8528 /* PBXTargetDependency */,
 			);
 			name = Simon;
 			productName = Simon;
@@ -181,6 +270,40 @@
 			productReference = 8380CCD81B427DD0001E8528 /* SimonUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8380CD151B427F7D001E8528 /* Simon WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8380CD371B427F7E001E8528 /* Build configuration list for PBXNativeTarget "Simon WatchKit App" */;
+			buildPhases = (
+				8380CD141B427F7D001E8528 /* Resources */,
+				8380CD361B427F7E001E8528 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8380CD251B427F7E001E8528 /* PBXTargetDependency */,
+			);
+			name = "Simon WatchKit App";
+			productName = "Simon WatchKit App";
+			productReference = 8380CD161B427F7D001E8528 /* Simon WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8380CD211B427F7E001E8528 /* Simon WatchKit App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8380CD351B427F7E001E8528 /* Build configuration list for PBXNativeTarget "Simon WatchKit App Extension" */;
+			buildPhases = (
+				8380CD1E1B427F7E001E8528 /* Sources */,
+				8380CD1F1B427F7E001E8528 /* Frameworks */,
+				8380CD201B427F7E001E8528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simon WatchKit App Extension";
+			productName = "Simon WatchKit App Extension";
+			productReference = 8380CD221B427F7E001E8528 /* Simon WatchKit App Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +324,12 @@
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 8380CCB81B427DCF001E8528;
 					};
+					8380CD151B427F7D001E8528 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					8380CD211B427F7E001E8528 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 				};
 			};
 			buildConfigurationList = 8380CCB41B427DCF001E8528 /* Build configuration list for PBXProject "Simon" */;
@@ -219,6 +348,8 @@
 				8380CCB81B427DCF001E8528 /* Simon */,
 				8380CCCC1B427DCF001E8528 /* SimonTests */,
 				8380CCD71B427DD0001E8528 /* SimonUITests */,
+				8380CD151B427F7D001E8528 /* Simon WatchKit App */,
+				8380CD211B427F7E001E8528 /* Simon WatchKit App Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +376,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8380CD141B427F7D001E8528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8380CD1C1B427F7E001E8528 /* Assets.xcassets in Resources */,
+				8380CD1A1B427F7E001E8528 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8380CD201B427F7E001E8528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8380CD2C1B427F7E001E8528 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +424,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8380CD1E1B427F7E001E8528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8380CD2A1B427F7E001E8528 /* ExtensionDelegate.swift in Sources */,
+				8380CD281B427F7E001E8528 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,6 +445,16 @@
 			isa = PBXTargetDependency;
 			target = 8380CCB81B427DCF001E8528 /* Simon */;
 			targetProxy = 8380CCD91B427DD0001E8528 /* PBXContainerItemProxy */;
+		};
+		8380CD251B427F7E001E8528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8380CD211B427F7E001E8528 /* Simon WatchKit App Extension */;
+			targetProxy = 8380CD241B427F7E001E8528 /* PBXContainerItemProxy */;
+		};
+		8380CD2F1B427F7E001E8528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8380CD151B427F7D001E8528 /* Simon WatchKit App */;
+			targetProxy = 8380CD2E1B427F7E001E8528 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -306,6 +473,14 @@
 				8380CCC61B427DCF001E8528 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8380CD181B427F7E001E8528 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8380CD191B427F7E001E8528 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -464,6 +639,70 @@
 			};
 			name = Release;
 		};
+		8380CD311B427F7E001E8528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Simon_WatchKit_App_Extension;
+				INFOPLIST_FILE = "Simon WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Simon.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8380CD321B427F7E001E8528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Simon_WatchKit_App_Extension;
+				INFOPLIST_FILE = "Simon WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Simon.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		8380CD331B427F7E001E8528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Simon WatchKit App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Simon.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8380CD341B427F7E001E8528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Simon WatchKit App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Simon.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -502,6 +741,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8380CD351B427F7E001E8528 /* Build configuration list for PBXNativeTarget "Simon WatchKit App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8380CD331B427F7E001E8528 /* Debug */,
+				8380CD341B427F7E001E8528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8380CD371B427F7E001E8528 /* Build configuration list for PBXNativeTarget "Simon WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8380CD311B427F7E001E8528 /* Debug */,
+				8380CD321B427F7E001E8528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
