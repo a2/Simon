@@ -1,20 +1,10 @@
-//
-//  InterfaceController.swift
-//  Simon WatchKit App Extension
-//
-//  Created by Alexsander Akers on 6/30/15.
-//  Copyright © 2015 Pandamonia LLC. All rights reserved.
-//
-
-import WatchKit
 import Foundation
-
+import WatchKit
 
 class InterfaceController: WKInterfaceController {
-
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
+
         // Configure interface objects here.
     }
 
@@ -27,5 +17,4 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
 }

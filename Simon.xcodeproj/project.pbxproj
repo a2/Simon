@@ -198,9 +198,9 @@
 		8380CD171B427F7E001E8528 /* Simon WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				8380CD181B427F7E001E8528 /* Interface.storyboard */,
 				8380CD1B1B427F7E001E8528 /* Assets.xcassets */,
 				8380CD1D1B427F7E001E8528 /* Info.plist */,
+				8380CD181B427F7E001E8528 /* Interface.storyboard */,
 			);
 			path = "Simon WatchKit App";
 			sourceTree = "<group>";
@@ -208,10 +208,10 @@
 		8380CD261B427F7E001E8528 /* Simon WatchKit App Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8380CD271B427F7E001E8528 /* InterfaceController.swift */,
-				8380CD291B427F7E001E8528 /* ExtensionDelegate.swift */,
 				8380CD2B1B427F7E001E8528 /* Assets.xcassets */,
+				8380CD291B427F7E001E8528 /* ExtensionDelegate.swift */,
 				8380CD2D1B427F7E001E8528 /* Info.plist */,
+				8380CD271B427F7E001E8528 /* InterfaceController.swift */,
 			);
 			path = "Simon WatchKit App Extension";
 			sourceTree = "<group>";
@@ -753,6 +753,7 @@
 				8380CD341B427F7E001E8528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8380CD371B427F7E001E8528 /* Build configuration list for PBXNativeTarget "Simon WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -761,6 +762,7 @@
 				8380CD321B427F7E001E8528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
