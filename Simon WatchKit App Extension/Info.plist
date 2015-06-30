@@ -33,7 +33,7 @@
 		<string>com.apple.watchkit</string>
 	</dict>
 	<key>RemoteInterfacePrincipalClass</key>
-	<string>$(PRODUCT_MODULE_NAME).InterfaceController</string>
+	<string>$(PRODUCT_MODULE_NAME).MainMenuInterfaceController</string>
 	<key>WKExtensionDelegateClassName</key>
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 </dict>

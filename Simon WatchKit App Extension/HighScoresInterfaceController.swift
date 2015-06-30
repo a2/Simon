@@ -1,7 +1,9 @@
 import Foundation
 import WatchKit
 
-class InterfaceController: WKInterfaceController {
+class HighScoresInterfaceController: WKInterfaceController {
+    @IBOutlet weak var table: WKInterfaceTable!
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
 

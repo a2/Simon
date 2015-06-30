@@ -1,15 +1,190 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Main Menu-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller title="Simon" id="AgC-eL-Hgc" userLabel="Main Menu" customClass="MainMenuInterfaceController" customModule="Simon_WatchKit_App_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="6hW-xU-zRi">
+                            <items>
+                                <label alignment="left" text="Welcome to Simon." numberOfLines="0" id="yJy-go-8rb">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <button width="1" alignment="left" title="Play" id="4nD-kh-1ff"/>
+                                <button width="1" alignment="left" title="High Scores" id="ZtP-gp-see">
+                                    <connections>
+                                        <segue destination="aOm-Dk-CyY" kind="push" id="hHL-nW-dP2"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
+        </scene>
+        <!--Game Buttons-->
+        <scene sceneID="mHt-ZI-xsq">
+            <objects>
+                <controller identifier="gameButtons" title="Simon" hidesWhenLoading="NO" id="QtJ-6O-6kN" userLabel="Game Buttons" customClass="GameButtonsInterfaceController" customModule="Simon_WatchKit_App_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="2" id="Sjp-Oh-kiC">
+                            <items>
+                                <group width="1" alignment="left" id="CPE-tR-1aA">
+                                    <items>
+                                        <button alignment="left" id="DXo-zM-23Z">
+                                            <group key="contentGroup" width="0.5" alignment="left" id="GAk-xM-5wh">
+                                                <items>
+                                                    <imageView alignment="left" id="XDO-39-sfH"/>
+                                                </items>
+                                            </group>
+                                        </button>
+                                        <button alignment="left" id="feE-mg-W7o">
+                                            <group key="contentGroup" width="0.5" alignment="left" id="1xL-jT-7um">
+                                                <items>
+                                                    <imageView alignment="left" id="K7q-yT-Ppa"/>
+                                                </items>
+                                            </group>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="Lnl-ql-acB">
+                                    <items>
+                                        <button alignment="left" id="Gnj-gR-IRt">
+                                            <group key="contentGroup" width="0.5" alignment="left" id="xRK-a1-Y1n">
+                                                <items>
+                                                    <imageView alignment="left" id="rrQ-9i-KMc"/>
+                                                </items>
+                                            </group>
+                                        </button>
+                                        <button alignment="left" id="I3y-gY-GLX">
+                                            <group key="contentGroup" width="0.5" alignment="left" id="sSW-v8-tMY">
+                                                <items>
+                                                    <imageView alignment="left" id="IE8-ql-fbt"/>
+                                                </items>
+                                            </group>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="sw1-eu-0mJ"/>
+                        <group width="1" alignment="left" id="fuV-Lk-5Xd">
+                            <items>
+                                <label alignment="left" text="Score:" id="8hH-t7-4BV"/>
+                                <label alignment="right" text="1" textAlignment="right" id="OYH-fu-Glh"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="blueButton" destination="I3y-gY-GLX" id="KZV-ge-pzt"/>
+                        <outlet property="greenButton" destination="DXo-zM-23Z" id="J6y-YL-a9B"/>
+                        <outlet property="redButton" destination="feE-mg-W7o" id="5m0-2K-cXw"/>
+                        <outlet property="scoreLabel" destination="OYH-fu-Glh" id="hmd-Tb-hrb"/>
+                        <outlet property="yellowButton" destination="Gnj-gR-IRt" id="CkR-rC-EmQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="544" y="154"/>
+        </scene>
+        <!--High Scores-->
+        <scene sceneID="zkS-zN-LxU">
+            <objects>
+                <controller title="High Scores" hidesWhenLoading="NO" id="aOm-Dk-CyY" customClass="HighScoresInterfaceController" customModule="Simon_WatchKit_App_Extension">
+                    <items>
+                        <table alignment="left" id="ltU-pD-Z7g">
+                            <items>
+                                <tableRow identifier="highScore" id="EHe-nc-cqJ" customClass="HighScoreController" customModule="Simon_WatchKit_App_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="TGp-BN-fzK">
+                                        <items>
+                                            <group width="1" alignment="left" id="0fP-QC-MUk">
+                                                <items>
+                                                    <label alignment="left" text="{Name}" id="GBW-Sh-ZkL">
+                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                    </label>
+                                                    <label alignment="right" text="{Score}" id="j6j-uv-bxP"/>
+                                                </items>
+                                            </group>
+                                            <label alignment="left" text="{Date}" id="Ae3-6e-Qjj">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="Ae3-6e-Qjj" id="cOQ-OJ-cBT"/>
+                                        <outlet property="nameLabel" destination="GBW-Sh-ZkL" id="bdb-H5-MWp"/>
+                                        <outlet property="scoreLabel" destination="j6j-uv-bxP" id="phO-hc-Sbe"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="ltU-pD-Z7g" id="nen-sa-MZh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="544" y="429"/>
+        </scene>
+        <!--Game Images-->
+        <scene sceneID="laG-Wi-t9h">
+            <objects>
+                <controller identifier="gameImages" title="Simon" hidesWhenLoading="NO" id="ub9-BI-0jl" userLabel="Game Images" customClass="GameImagesInterfaceController" customModule="Simon_WatchKit_App_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="2" id="fb0-K2-U5e">
+                            <items>
+                                <group width="1" alignment="left" id="yti-e5-iex">
+                                    <items>
+                                        <group width="0.5" alignment="left" id="0o9-Y1-Dml">
+                                            <items>
+                                                <imageView alignment="left" id="5gK-7h-ugU"/>
+                                            </items>
+                                        </group>
+                                        <group width="0.5" alignment="left" id="cnA-R1-sP1">
+                                            <items>
+                                                <imageView alignment="left" id="eow-OJ-hcM"/>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="scV-z0-MOY">
+                                    <items>
+                                        <group width="0.5" alignment="left" id="mi4-22-YEk">
+                                            <items>
+                                                <imageView alignment="left" id="Zti-4K-xX4"/>
+                                            </items>
+                                        </group>
+                                        <group width="0.5" alignment="left" id="Go7-Ip-6E8">
+                                            <items>
+                                                <imageView alignment="left" id="2bi-yD-IbF"/>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="HTT-Re-vwn"/>
+                        <group width="1" alignment="left" id="wgp-Cn-zdE">
+                            <items>
+                                <label alignment="left" text="Score:" id="sfc-6G-Ymr"/>
+                                <label alignment="right" text="1" textAlignment="right" id="dMh-K6-q52"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="blueImage" destination="2bi-yD-IbF" id="J1f-oa-G15"/>
+                        <outlet property="greenImage" destination="5gK-7h-ugU" id="1w6-yJ-gli"/>
+                        <outlet property="redImage" destination="eow-OJ-hcM" id="h6t-6T-s8u"/>
+                        <outlet property="scoreLabel" destination="dMh-K6-q52" id="Ul7-7i-3t0"/>
+                        <outlet property="yellowImage" destination="Zti-4K-xX4" id="PCI-5r-MGZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="753" y="154"/>
         </scene>
     </scenes>
 </document>

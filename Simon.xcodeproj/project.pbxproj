@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831E33EB1B429D5F000F2BAF /* GameButtonsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E33EA1B429D5F000F2BAF /* GameButtonsInterfaceController.swift */; };
+		831E33ED1B429D6B000F2BAF /* GameImagesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E33EC1B429D6B000F2BAF /* GameImagesInterfaceController.swift */; };
+		8321F09A1B428275002CFC54 /* HighScoresInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321F0991B428275002CFC54 /* HighScoresInterfaceController.swift */; };
+		8321F09C1B428348002CFC54 /* HighScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321F09B1B428348002CFC54 /* HighScoreController.swift */; };
 		8380CCBD1B427DCF001E8528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380CCBC1B427DCF001E8528 /* AppDelegate.swift */; };
 		8380CCBF1B427DCF001E8528 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380CCBE1B427DCF001E8528 /* ViewController.swift */; };
 		8380CCC21B427DCF001E8528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8380CCC01B427DCF001E8528 /* Main.storyboard */; };
@@ -17,7 +21,7 @@
 		8380CD1A1B427F7E001E8528 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8380CD181B427F7E001E8528 /* Interface.storyboard */; };
 		8380CD1C1B427F7E001E8528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8380CD1B1B427F7E001E8528 /* Assets.xcassets */; };
 		8380CD231B427F7E001E8528 /* Simon WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8380CD221B427F7E001E8528 /* Simon WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8380CD281B427F7E001E8528 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380CD271B427F7E001E8528 /* InterfaceController.swift */; };
+		8380CD281B427F7E001E8528 /* MainMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380CD271B427F7E001E8528 /* MainMenuInterfaceController.swift */; };
 		8380CD2A1B427F7E001E8528 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380CD291B427F7E001E8528 /* ExtensionDelegate.swift */; };
 		8380CD2C1B427F7E001E8528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8380CD2B1B427F7E001E8528 /* Assets.xcassets */; };
 		8380CD301B427F7E001E8528 /* Simon WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8380CD161B427F7D001E8528 /* Simon WatchKit App.app */; };
@@ -80,6 +84,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		831E33EA1B429D5F000F2BAF /* GameButtonsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameButtonsInterfaceController.swift; sourceTree = "<group>"; };
+		831E33EC1B429D6B000F2BAF /* GameImagesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameImagesInterfaceController.swift; sourceTree = "<group>"; };
+		8321F0991B428275002CFC54 /* HighScoresInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoresInterfaceController.swift; sourceTree = "<group>"; };
+		8321F09B1B428348002CFC54 /* HighScoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreController.swift; sourceTree = "<group>"; };
 		8380CCB91B427DCF001E8528 /* Simon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8380CCBC1B427DCF001E8528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8380CCBE1B427DCF001E8528 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +106,7 @@
 		8380CD1B1B427F7E001E8528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8380CD1D1B427F7E001E8528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8380CD221B427F7E001E8528 /* Simon WatchKit App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simon WatchKit App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8380CD271B427F7E001E8528 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8380CD271B427F7E001E8528 /* MainMenuInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuInterfaceController.swift; sourceTree = "<group>"; };
 		8380CD291B427F7E001E8528 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		8380CD2B1B427F7E001E8528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8380CD2D1B427F7E001E8528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -210,8 +218,12 @@
 			children = (
 				8380CD2B1B427F7E001E8528 /* Assets.xcassets */,
 				8380CD291B427F7E001E8528 /* ExtensionDelegate.swift */,
+				831E33EA1B429D5F000F2BAF /* GameButtonsInterfaceController.swift */,
+				831E33EC1B429D6B000F2BAF /* GameImagesInterfaceController.swift */,
+				8321F09B1B428348002CFC54 /* HighScoreController.swift */,
+				8321F0991B428275002CFC54 /* HighScoresInterfaceController.swift */,
 				8380CD2D1B427F7E001E8528 /* Info.plist */,
-				8380CD271B427F7E001E8528 /* InterfaceController.swift */,
+				8380CD271B427F7E001E8528 /* MainMenuInterfaceController.swift */,
 			);
 			path = "Simon WatchKit App Extension";
 			sourceTree = "<group>";
@@ -432,8 +444,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8321F09C1B428348002CFC54 /* HighScoreController.swift in Sources */,
 				8380CD2A1B427F7E001E8528 /* ExtensionDelegate.swift in Sources */,
-				8380CD281B427F7E001E8528 /* InterfaceController.swift in Sources */,
+				831E33EB1B429D5F000F2BAF /* GameButtonsInterfaceController.swift in Sources */,
+				831E33ED1B429D6B000F2BAF /* GameImagesInterfaceController.swift in Sources */,
+				8380CD281B427F7E001E8528 /* MainMenuInterfaceController.swift in Sources */,
+				8321F09A1B428275002CFC54 /* HighScoresInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
