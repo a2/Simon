@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		831E33EB1B429D5F000F2BAF /* GameButtonsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E33EA1B429D5F000F2BAF /* GameButtonsInterfaceController.swift */; };
-		831E33ED1B429D6B000F2BAF /* GameImagesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E33EC1B429D6B000F2BAF /* GameImagesInterfaceController.swift */; };
+		831CDE8C1B4485B100847369 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831CDE8B1B4485B100847369 /* HighScore.swift */; };
+		831CDE8E1B44902300847369 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831CDE8D1B44902300847369 /* Box.swift */; };
+		831CDE901B4491F900847369 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831CDE8F1B4491F900847369 /* GameState.swift */; };
 		8321F09A1B428275002CFC54 /* HighScoresInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321F0991B428275002CFC54 /* HighScoresInterfaceController.swift */; };
 		8321F09C1B428348002CFC54 /* HighScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8321F09B1B428348002CFC54 /* HighScoreController.swift */; };
+		83583F671B431AF700C96D41 /* SimonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C6B2E51B42DAE3001A9B54 /* SimonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83583F6A1B431EBD00C96D41 /* GameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83583F691B431EBD00C96D41 /* GameInterfaceController.swift */; };
+		837AC2931B44B3ED006BB967 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 837AC2921B44B3ED006BB967 /* Localizable.stringsdict */; };
 		8380CCBD1B427DCF001E8528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380CCBC1B427DCF001E8528 /* AppDelegate.swift */; };
 		8380CCBF1B427DCF001E8528 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380CCBE1B427DCF001E8528 /* ViewController.swift */; };
 		8380CCC21B427DCF001E8528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8380CCC01B427DCF001E8528 /* Main.storyboard */; };
@@ -42,8 +46,6 @@
 		83C6B31E1B42DF8B001A9B54 /* Color+RandomValuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B31C1B42DF8B001A9B54 /* Color+RandomValuable.swift */; };
 		83C6B3201B42E034001A9B54 /* Game+RandomValuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B31F1B42E034001A9B54 /* Game+RandomValuable.swift */; };
 		83C6B3211B42E034001A9B54 /* Game+RandomValuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B31F1B42E034001A9B54 /* Game+RandomValuable.swift */; };
-		83C6B3231B42E24D001A9B54 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B3221B42E24D001A9B54 /* Box.swift */; };
-		83C6B3241B42E24D001A9B54 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B3221B42E24D001A9B54 /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,10 +155,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		831E33EA1B429D5F000F2BAF /* GameButtonsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameButtonsInterfaceController.swift; sourceTree = "<group>"; };
-		831E33EC1B429D6B000F2BAF /* GameImagesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameImagesInterfaceController.swift; sourceTree = "<group>"; };
+		831CDE8B1B4485B100847369 /* HighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
+		831CDE8D1B44902300847369 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		831CDE8F1B4491F900847369 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		8321F0991B428275002CFC54 /* HighScoresInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoresInterfaceController.swift; sourceTree = "<group>"; };
 		8321F09B1B428348002CFC54 /* HighScoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreController.swift; sourceTree = "<group>"; };
+		83583F691B431EBD00C96D41 /* GameInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInterfaceController.swift; sourceTree = "<group>"; };
+		837AC2921B44B3ED006BB967 /* Localizable.stringsdict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		8380CCB91B427DCF001E8528 /* Simon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8380CCBC1B427DCF001E8528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8380CCBE1B427DCF001E8528 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -191,7 +196,8 @@
 		83C6B3191B42DDCD001A9B54 /* RandomValuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomValuable.swift; sourceTree = "<group>"; };
 		83C6B31C1B42DF8B001A9B54 /* Color+RandomValuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+RandomValuable.swift"; sourceTree = "<group>"; };
 		83C6B31F1B42E034001A9B54 /* Game+RandomValuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Game+RandomValuable.swift"; sourceTree = "<group>"; };
-		83C6B3221B42E24D001A9B54 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		83EE41771B4483ED00062E80 /* Simon WatchKit App Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Simon WatchKit App Extension.entitlements"; sourceTree = "<group>"; };
+		83EE41781B4483FE00062E80 /* Simon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Simon.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +297,7 @@
 				8380CCC81B427DCF001E8528 /* Info.plist */,
 				8380CCC51B427DCF001E8528 /* LaunchScreen.storyboard */,
 				8380CCC01B427DCF001E8528 /* Main.storyboard */,
+				83EE41781B4483FE00062E80 /* Simon.entitlements */,
 				8380CCBE1B427DCF001E8528 /* ViewController.swift */,
 			);
 			path = Simon;
@@ -328,13 +335,17 @@
 			isa = PBXGroup;
 			children = (
 				8380CD2B1B427F7E001E8528 /* Assets.xcassets */,
+				831CDE8D1B44902300847369 /* Box.swift */,
 				8380CD291B427F7E001E8528 /* ExtensionDelegate.swift */,
-				831E33EA1B429D5F000F2BAF /* GameButtonsInterfaceController.swift */,
-				831E33EC1B429D6B000F2BAF /* GameImagesInterfaceController.swift */,
+				83583F691B431EBD00C96D41 /* GameInterfaceController.swift */,
+				831CDE8F1B4491F900847369 /* GameState.swift */,
+				831CDE8B1B4485B100847369 /* HighScore.swift */,
 				8321F09B1B428348002CFC54 /* HighScoreController.swift */,
 				8321F0991B428275002CFC54 /* HighScoresInterfaceController.swift */,
 				8380CD2D1B427F7E001E8528 /* Info.plist */,
 				8380CD271B427F7E001E8528 /* MainMenuInterfaceController.swift */,
+				83EE41771B4483ED00062E80 /* Simon WatchKit App Extension.entitlements */,
+				837AC2921B44B3ED006BB967 /* Localizable.stringsdict */,
 			);
 			path = "Simon WatchKit App Extension";
 			sourceTree = "<group>";
@@ -342,7 +353,6 @@
 		83C6B2E41B42DAE3001A9B54 /* SimonKit */ = {
 			isa = PBXGroup;
 			children = (
-				83C6B3221B42E24D001A9B54 /* Box.swift */,
 				83C6B3131B42DC5D001A9B54 /* Color.swift */,
 				83C6B31C1B42DF8B001A9B54 /* Color+RandomValuable.swift */,
 				83C6B3161B42DD43001A9B54 /* Game.swift */,
@@ -378,6 +388,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83583F671B431AF700C96D41 /* SimonKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +555,12 @@
 				TargetAttributes = {
 					8380CCB81B427DCF001E8528 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 94C3W2AV74;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8380CCCC1B427DCF001E8528 = {
 						CreatedOnToolsVersion = 7.0;
@@ -555,9 +572,16 @@
 					};
 					8380CD151B427F7D001E8528 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 94C3W2AV74;
 					};
 					8380CD211B427F7E001E8528 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 94C3W2AV74;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					83C6B2E21B42DAE3001A9B54 = {
 						CreatedOnToolsVersion = 7.0;
@@ -635,6 +659,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8380CD2C1B427F7E001E8528 /* Assets.xcassets in Resources */,
+				837AC2931B44B3ED006BB967 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,10 +718,12 @@
 			files = (
 				8321F09C1B428348002CFC54 /* HighScoreController.swift in Sources */,
 				8380CD2A1B427F7E001E8528 /* ExtensionDelegate.swift in Sources */,
-				831E33EB1B429D5F000F2BAF /* GameButtonsInterfaceController.swift in Sources */,
-				831E33ED1B429D6B000F2BAF /* GameImagesInterfaceController.swift in Sources */,
+				831CDE8C1B4485B100847369 /* HighScore.swift in Sources */,
 				8380CD281B427F7E001E8528 /* MainMenuInterfaceController.swift in Sources */,
 				8321F09A1B428275002CFC54 /* HighScoresInterfaceController.swift in Sources */,
+				831CDE901B4491F900847369 /* GameState.swift in Sources */,
+				83583F6A1B431EBD00C96D41 /* GameInterfaceController.swift in Sources */,
+				831CDE8E1B44902300847369 /* Box.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,7 +734,6 @@
 				83C6B31D1B42DF8B001A9B54 /* Color+RandomValuable.swift in Sources */,
 				83C6B3201B42E034001A9B54 /* Game+RandomValuable.swift in Sources */,
 				83C6B3141B42DC5D001A9B54 /* Color.swift in Sources */,
-				83C6B3231B42E24D001A9B54 /* Box.swift in Sources */,
 				83C6B31A1B42DDCD001A9B54 /* RandomValuable.swift in Sources */,
 				83C6B3171B42DD43001A9B54 /* Game.swift in Sources */,
 			);
@@ -728,7 +754,6 @@
 				83C6B31E1B42DF8B001A9B54 /* Color+RandomValuable.swift in Sources */,
 				83C6B3211B42E034001A9B54 /* Game+RandomValuable.swift in Sources */,
 				83C6B3151B42DC5E001A9B54 /* Color.swift in Sources */,
-				83C6B3241B42E24D001A9B54 /* Box.swift in Sources */,
 				83C6B31B1B42DDCD001A9B54 /* RandomValuable.swift in Sources */,
 				83C6B3181B42DD43001A9B54 /* Game.swift in Sources */,
 			);
@@ -894,6 +919,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Simon/Simon.entitlements;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Simon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -906,6 +932,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Simon/Simon.entitlements;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Simon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -966,6 +993,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Simon_WatchKit_App_Extension;
@@ -983,6 +1011,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Simon_WatchKit_App_Extension;
@@ -999,14 +1028,19 @@
 		8380CD331B427F7E001E8528 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Simon WatchKit App Extension/Simon WatchKit App Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Simon WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Simon.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -1015,12 +1049,16 @@
 		8380CD341B427F7E001E8528 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Simon WatchKit App Extension/Simon WatchKit App Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Simon WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Simon.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -1204,6 +1242,7 @@
 				83C6B2FB1B42DAE4001A9B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83C6B3001B42DAE4001A9B54 /* Build configuration list for PBXNativeTarget "SimonKitTests" */ = {
 			isa = XCConfigurationList;
@@ -1212,6 +1251,7 @@
 				83C6B2FD1B42DAE4001A9B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83C6B30B1B42DB0B001A9B54 /* Build configuration list for PBXNativeTarget "SimonKit-watchOS" */ = {
 			isa = XCConfigurationList;
@@ -1220,6 +1260,7 @@
 				83C6B30D1B42DB0B001A9B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
