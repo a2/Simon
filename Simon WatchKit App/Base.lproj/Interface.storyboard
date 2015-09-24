@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.20" systemVersion="15A204h" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
         <!--Main Menu-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="mainMenu" title="Menu" id="AgC-eL-Hgc" userLabel="Main Menu" customClass="MainMenuInterfaceController" customModule="Simon_WatchKit_App_Extension">
+                <controller identifier="mainMenu" title="Simon" id="AgC-eL-Hgc" userLabel="Main Menu" customClass="MainMenuInterfaceController" customModule="Simon_WatchKit_App_Extension">
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="6hW-xU-zRi">
                             <items>
@@ -21,11 +21,13 @@
                                     </items>
                                 </group>
                                 <button width="1" alignment="left" accessibilityLabel="Play" accessibilityValue="Starts a new game" title="Play" id="4nD-kh-1ff">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
                                     <connections>
                                         <action selector="play" destination="AgC-eL-Hgc" id="vwF-3T-KL3"/>
                                     </connections>
                                 </button>
                                 <button width="1" alignment="left" accessibilityLabel="High Scores" accessibilityValue="Shows high scores" title="High Scores" id="ZtP-gp-see">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
                                     <connections>
                                         <action selector="showHighScores" destination="AgC-eL-Hgc" id="acQ-Js-87U"/>
                                     </connections>
@@ -186,7 +188,7 @@
                             <accessibilityTraits key="accessibilityTraits" staticText="YES" notEnabled="YES"/>
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
-                        <label alignment="left" accessibilityLabel="Play a few rounds first and then come back." text="Play a few rounds first and then come back." numberOfLines="0" id="1i4-HI-nTH">
+                        <label alignment="left" accessibilityLabel="Play a few rounds first and then come back." text="Play a few games and come back to see your high scores." numberOfLines="0" id="1i4-HI-nTH">
                             <accessibilityTraits key="accessibilityTraits" staticText="YES" notEnabled="YES"/>
                         </label>
                     </items>
