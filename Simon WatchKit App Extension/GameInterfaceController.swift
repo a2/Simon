@@ -3,6 +3,7 @@ import WatchKit
 import UIKit
 
 let GameHistoryKey = "GameHistoryKey"
+
 @asmname("UIAccessibilityPostNotification") func UIAccessibilityPostNotification(notification: UIAccessibilityNotifications, argument: AnyObject?)
 
 class GameInterfaceController: WKInterfaceController {
@@ -10,6 +11,7 @@ class GameInterfaceController: WKInterfaceController {
 
     var game = Game<Color>()
     var guess = [Color]()
+    var didTapMenuItem = false
 
     // MARK: - IBOutlets
 
@@ -48,7 +50,15 @@ class GameInterfaceController: WKInterfaceController {
             userDefaults.removeObjectForKey(GameHistoryKey)
             userDefaults.synchronize()
 
-            WKInterfaceController.reloadRootControllers([("mainMenu", game.history.count - 1)])
+            disableAllButtons()
+
+            let when = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
+            dispatch_after(when, dispatch_get_main_queue()) {
+                WKInterfaceController.reloadRootControllers([("mainMenu", self.game.history.count - 1)])
+
+                self.game = Game()
+                self.updatePoints(0)
+            }
         } else if guess.count == game.history.count {
             updatePoints(game.history.count)
             disableAllButtons()
@@ -56,7 +66,7 @@ class GameInterfaceController: WKInterfaceController {
             guess.removeAll(keepCapacity: true)
             game.addRound()
 
-            let when = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
+            let when = dispatch_time(DISPATCH_TIME_NOW, Int64(1.0 * Double(NSEC_PER_SEC)))
             dispatch_after(when, dispatch_get_main_queue(), playHistory)
         }
     }
@@ -80,6 +90,30 @@ class GameInterfaceController: WKInterfaceController {
 
     @IBAction func blueButtonTapped() {
         colorButtonTapped(.Blue)
+    }
+
+    @IBAction func startNewGame() {
+        didTapMenuItem = true
+
+        userDefaults.removeObjectForKey(GameHistoryKey)
+        userDefaults.synchronize()
+
+        game = Game()
+        game.addRound()
+
+        updatePoints(0)
+
+        let when = dispatch_time(DISPATCH_TIME_NOW, Int64(1.0 * Double(NSEC_PER_SEC)))
+        dispatch_after(when, dispatch_get_main_queue(), playHistory)
+    }
+
+    @IBAction func openMainMenu() {
+        didTapMenuItem = true
+
+        let when = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
+        dispatch_after(when, dispatch_get_main_queue()) {
+            WKInterfaceController.reloadRootControllersWithNames(["mainMenu"], contexts: nil)
+        }
     }
 
     // MARK: - Playback
@@ -143,10 +177,6 @@ class GameInterfaceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-    }
-
-    override func willActivate() {
-        super.willActivate()
 
         if let gameHistory = userDefaults.arrayForKey(GameHistoryKey) as? [Int] {
             game = Game(history: gameHistory.flatMap(Color.init))
@@ -154,16 +184,30 @@ class GameInterfaceController: WKInterfaceController {
 
         updatePoints(game.history.count)
 
-        if game.history.count == 0 {
-            game.addRound()
-        }
-
         let when = dispatch_time(DISPATCH_TIME_NOW, Int64(1.0 * Double(NSEC_PER_SEC)))
         dispatch_after(when, dispatch_get_main_queue(), playHistory)
     }
 
+    override func willActivate() {
+        super.willActivate()
+
+        if didTapMenuItem {
+            didTapMenuItem = false
+            return
+        }
+
+        if game.history.count == 0 {
+            game.addRound()
+        }
+    }
+
     override func didDeactivate() {
         super.didDeactivate()
+
+        if didTapMenuItem {
+            didTapMenuItem = false
+            return
+        }
 
         let object = game.history.map { $0.rawValue }
         userDefaults.setObject(object, forKey: GameHistoryKey)
